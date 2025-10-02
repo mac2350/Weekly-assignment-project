@@ -16,7 +16,7 @@ int main()
     printf("enter water units consumed ");
     scanf("%d",&units);
     // calculates total bill
-    if(units<=30)
+    if(units>0&&units<=30)
     {
         bill=units*20;
     }
@@ -24,14 +24,20 @@ int main()
     {
         bill=(30*20)+((units-30)*25);
     }
-    else
+    else if(units>60)
     {
         bill=(30*20)+((units-30)*25)+((units-60)*30);
+    }
+    else
+    {
+        printf("put positive value");
+        return 1;
     }
     //total bill as output
     printf("Total bill: %.2f",bill);
 
     return 0;
+
 
 
 }
