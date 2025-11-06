@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
+/*
+Name: Macevady Mac Nganga
+REGISTRATION NUMBER: CT100/G/26121/25
+DESCRIPTION: Program that enters title of books in file and cormfirms entry
+*/
 
 
 
@@ -29,4 +34,5 @@ int main()
     fclose(books);
 
     return 0;
+
 }
