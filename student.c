@@ -9,8 +9,8 @@ DESCRIPTION: Program that enters students detail in file and retrieves them back
 struct students//student structure
 {
     char name[100];
-    int marks;
     char reg_no[100];
+    char marks[100];
 };
 
 
@@ -23,9 +23,9 @@ int main()
     file=fopen("results.dat","wb");
 
     struct students number[5]={
-        {"Alice Smith", 101, 85.5},
-        {"Bob Johnson", 102, 72.0},
-        {"Charlie Brown", 103, 91.2}
+        {"Alice Smith", "101", "85.5"},
+        {"Bob Johnson", "102", "72.0"},
+        {"Charlie Brown", "103", "91.2"}
     };
 
     if(file==NULL)
@@ -48,7 +48,7 @@ int main()
 
       fread(&number, sizeof(struct students), 1, files);
       printf("Name: %s, Reg No: %d, Marks: %.2f\n",
-               number->name, number->marks, number->marks);
+               number->name, number->marks);
 
      
      
@@ -57,6 +57,7 @@ int main()
     fclose(file);
      return 0;
 }
+
 
 
 
