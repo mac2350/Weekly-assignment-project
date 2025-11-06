@@ -47,7 +47,7 @@ int main()
      }
 
       fread(&number, sizeof(struct students), 1, files);
-      printf("Name: %s, Reg No: %d, Marks: %.2f\n",
+      printf("Name: %s, Marks: %s\n",
                number->name, number->marks);
 
      
@@ -57,6 +57,7 @@ int main()
     fclose(file);
      return 0;
 }
+
 
 
 
