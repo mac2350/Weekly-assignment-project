@@ -1,6 +1,12 @@
 #include <stdio.h>
+/*
+Name: Macevady Mac Nganga
+REGISTRATION NUMBER: CT100/G/26121/25
+DESCRIPTION: Program that enters students detail in file and retrieves them back from file
+*/
 
-struct students
+
+struct students//student structure
 {
     char name[100];
     int marks;
@@ -51,5 +57,6 @@ int main()
     fclose(file);
      return 0;
 }
+
 
 
